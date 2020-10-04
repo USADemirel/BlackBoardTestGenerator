@@ -1,0 +1,108 @@
+<html>
+<head>
+
+
+  <!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Teacher Tools</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images\favicon.png">
+
+<!--  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+  <script src="js\papaparse.min.js"></script>
+
+  <style>
+
+   body {
+    background: url('images/3649627.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   }
+
+   .outer-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    vertical-align: center;
+    align-self: center;
+   }
+
+   .container {
+    width: 300px;
+    height: 650px;
+    margin: auto;
+    vertical-align: center;
+    align-self: center;
+
+   }
+
+   .container div {
+    margin: 20px auto;
+   }
+
+   form .row div {
+    margin: 15px auto;
+   }
+
+   .details-card p {
+    margin: 5px;
+   }
+
+  </style>
+
+</head>
+
+<body>
+
+<div class="outer-container">
+  <div class="container">
+    <h1>Welcome to Teacher Tools Page</h1>
+    <div class="form-card">
+      <form>
+        <div class="row">
+          <div>
+            <label for="assignment-title">Assignment Title</label>
+            <input class="u-full-width" type="text" placeholder="Assignment Title (Optional)" id="assignment-title">
+          </div>
+          <div>
+            <label for="csvfile">Upload your CSV File</label>
+            <input id="csvfile" type="file" value="i">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="button-card">
+      <button id="submitbutton">Upload CSV file!</button>
+    </div>
+    <div class="details-card">
+      <div id="response"></div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/index.js"></script>
+</body>
+
+</html>
